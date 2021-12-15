@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheCodes Weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <header>
+            <form class="searchForm" id="searchForm">
+                <input class="search" id="city" placeholder="City" />
+                <input type="submit" class="btn btn-light" value="Search" id="searchCity" />
+                <button class="btn btn-light" id="currentWeather">
+                    Current
+                </button>
+            </form>
+        </header>
+        <div class="container">
+            <div class="boxweather">
+                <h1>
+
+                </h1>
+
+                <hr class="blueline" />
+
+                <div class="row">
+                    <div class="col">
+                        <h2>
+
+                        </h2>
+                        <h6 id="description">
+
+                        </h6>
+                    </div>
+                    <div class="col">
+                        <h4>
+                            22/05/2021
+                            <br />
+                            <div id="hour">
+                            </div>
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img class="principal" src="media/sunnycloudy.png" alt="weather" />
+                    <div class="col-8">
+                        <br />
+                        <section class="grados">
+                            <h3>
+                                <strong id="temperature"> 16 </strong> <a href="#" id="grados">°C</a> | <a href="#"
+                                    id="faren">°F</a>
+                            </h3>
+                            <br />
+                            <p>
+                                Humidity: <span id="humidity"> </span> %
+                                <br />
+                                Wind: <span id="wind"> </span> km/h
+                            </p>
+                        </section>
+                    </div>
+                </div>
+
+                <hr class="blueline" />
+
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <img class="second" src="media/cloudy.png" alt="weather" />
+                            <div class="col">
+                                <section class="dia_grados">
+                                    <h5>
+                                        SUN
+                                    </h5>
+                                    <h3>
+                                        18°C
+                                    </h3>
+                                </section>
+                            </div>
+                        </div>
+                        <p>
+                            Precipitation: 20%
+                            <br />
+                            Humidity: 65%
+                            <br />
+                            Wind: 16 km/h
+                        </p>
+                    </div>
+
+                    <div class="col">
+                        <div class="row">
+                            <img class="second" src="media/partlycloudy.png" alt="weather" />
+                            <div class="col">
+                                <section class="dia_grados">
+                                    <h5>
+                                        MON
+                                    </h5>
+                                    <h3>
+                                        21°C
+                                    </h3>
+                                </section>
+                            </div>
+                        </div>
+                        <p>
+                            Precipitation: 20%
+                            <br />
+                            Humidity: 66%
+                            <br />
+                            Wind: 32 km/h
+                        </p>
+                    </div>
+
+                    <div class="col">
+                        <div class="row">
+                            <img class="second" src="media/cloudy.png" alt="weather" />
+                            <div class="col">
+                                <section class="dia_grados">
+                                    <h5>
+                                        TUE
+                                    </h5>
+                                    <h3>
+                                        18°C
+                                    </h3>
+                                </section>
+                            </div>
+                        </div>
+                        <p>
+                            Precipitation: 20%
+                            <br />
+                            Humidity: 66%
+                            <br />
+                            Wind: 21 km/h
+                        </p>
+                    </div>
+
+                    <div class="col">
+                        <div class="row">
+                            <img class="second" src="media/partlycloudy.png" alt="weather" />
+                            <div class="col">
+                                <section class="dia_grados">
+                                    <h5></h5>
+                                    WED
+                                    </h5>
+                                    <h3>
+                                        19°C
+                                    </h3>
+                                </section>
+                            </div>
+                        </div>
+                        <p>
+                            Precipitation: 10%
+                            <br />
+                            Humidity: 67%
+                            <br />
+                            Wind: 23 km/h
+                        </p>
+                    </div>
+
+                    <div class="col">
+                        <div class="row">
+                            <img class="second" src="media/partlycloudy.png" alt="weather" />
+                            <div class="col">
+                                <section class="dia_grados">
+                                    <h5>
+                                        THU
+                                    </h5>
+                                    <h3>
+                                        21°C
+                                    </h3>
+                                </section>
+                            </div>
+                        </div>
+                        <p>
+                            Precipitation: 20%
+                            <br />
+                            Humidity: 66%
+                            <br />
+                            Wind: 19 km/h
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <footer>
+            Designed by V.F.
+        </footer>
+        <script src="src/index.js">
+        </script>
+</body>
+
+</html>
